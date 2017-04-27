@@ -1,0 +1,299 @@
+
+/* 
+    Created on : 05/07/2016, 22:57:21
+    Author     : ISB
+*/
+
+@font-face{
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Intro"), url('../fonts/Intro.otf') format("truetype");
+    
+}
+
+@font-face{
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mohave"), url('../fonts/Mohave.otf') format("truetype");
+     
+}
+body {
+     background: url(../img/Background01.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+ h1{
+     font-family: "Intro";
+     font-size: 60px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+     text-shadow: 2px 2px 4px #FFFFFF;
+     color: white;
+ }
+ 
+ #menu{
+     font-family: "Mohave";
+     font-size: 30px;
+     word-spacing: 8px;
+ }
+
+h4, h2{
+    text-align: center;
+    font-family: "Mohave";
+    font-size: 60px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 1px 1px 2px #FFFFFF;
+    color: dodgerblue;
+    letter-spacing: 15px;
+ } 
+
+ span{
+    font-family: "Mohave";
+    font-size: 30px;
+    display:block;
+    opacity: 0.9;
+ }
+
+ #sfecha{
+      background: burlywood;
+ }
+ #shora{
+      background:orange;
+ }
+ #sprecio{
+      background:lightskyblue;
+ }
+ 
+ #slugar{
+     background:yellow;
+ }
+ #smaxj{
+      background:violet;
+ }
+ form table{   
+    font-family: "Mohave";
+    height: 60px;
+    width: 100%;
+    background: black;
+    animation: float 5s infinite;
+    background-color: rgba(0,0,0,0.6);
+
+ }
+ #tadd{
+     background-color: rgba(37,143,125,0.6);
+     font-size:40px;
+ }
+
+ #tdremove{
+     background-color: rgba(207,207,207,0.6);
+    font-size:30px;
+ }
+ form table input[type="text"]{
+     font-size:20px;
+     height: 30px;
+     width: 120px;
+ }
+ from table  tr select{
+     background: #009ED8;
+ }
+
+  form table input[type="submit"], .hlink1  a:link, .hlink1 a:visited, .hlink2 a:link, .hlink2 a:visited {
+    padding: 10px 25px;
+    height: 35px;
+    width: 320px;
+    color:white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    word-spacing: 15px;
+    font-family: "Mohave";
+    text-shadow: 1px 1px 2px #000000;
+ }
+ 
+form table input[type="submit"]  {
+   background-color: rgba(244,67,54,0.7);
+    line-height: 5px;
+    font-size:25px;
+}
+ form table input[type="submit"]:enabled{
+ background: #E52A1F;
+ }
+
+#badd{
+    line-height: 2px;
+    font-size:30px;
+    padding:20px;
+     background-color: #009ED8;
+ }
+ 
+ #badd :visited, #badd:hover{
+      background-color: #006D95;
+ }
+ .hlink1  a:link, .hlink1 a:visited {
+     font-size: 35px;
+     background-color: #139675;
+ } 
+ .hlink1 a:hover, .hlink1 a:active {
+     background-color: #006231;
+ }
+ .hlink2 a:link, .hlink2 a:visited {
+     font-size: 35px;
+     background-color: #C673B3;
+ } 
+ 
+ .hlink2 a:hover, .hlink2 a:active {
+     background-color: #A5478F;
+ }
+form table input[id=mihora]{
+    text-align:center;
+ }
+ form table input[id=milugar]{
+    width: 300px;
+ }
+
+ form table td:nth-child(odd){
+    text-align: left;
+ }
+ 
+ br{
+     background:ghostwhite;
+     opacity: 0.4;
+ }
+  form table td:nth-child(even){
+    text-align: right;
+ }
+
+ /*
+    lista de nombre de jugadores
+ 
+ */
+
+
+ .listaJug{
+    background: white;
+    border-radius:3px;
+    border-collapse: collapse;
+    height: 60px;
+    margin: auto;
+    max-width: 800px;
+    padding:5px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    animation: float 5s infinite;
+    opacity: 0.9;
+ }
+ 
+ .listaJug th {
+  color:#D5DDE5;;
+  background:#1b1e24;
+  border-bottom:6.5px solid #9ea7af;
+  border-right: 3.5px solid #343a45;
+  font-size:30px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+  opacity:10;
+}
+ 
+
+#id{
+    font-family: "Mohave";
+   font-size:30px;
+    width: 240px;
+    text-align: center;
+    border-bottom:none;
+    border:none;
+    color: black;
+    background: transparent;
+      border-top: transparent !important;
+      border-left: transparent !important;
+      border-right: transparent !important;
+      border-bottom: transparent!important;
+
+}
+#id :focus{
+    outline: none;
+}
+
+.listaJug th:first-child {
+  border-top-left-radius:3px;
+}
+ 
+.listaJug th:last-child {
+  border-top-right-radius:3px;
+  border-right:none;
+}
+
+.listaJug tr {
+  opacity:10;
+  border-top: 3.5px solid #C1C3D1;
+  border-bottom: 3.5px solid #C1C3D1;
+  color:#666B85;
+  font-size:26px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+.listaJug tr:hover td {
+  background:#4E5066;
+  color:#FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+ 
+.listaJug tr:first-child {
+  border-top:none;
+}
+
+.listaJug tr:last-child {
+  border-bottom:none;
+}
+ 
+.listaJug tr:nth-child(odd) td {
+  background:#EBEBEB;
+}
+ 
+.listaJug tr:nth-child(odd):hover td {
+  background:#4E5066;
+}
+
+
+.listaJug tr:last-child td:first-child {
+  border-bottom-left-radius:3px;
+}
+ 
+.listaJug tr:last-child td:last-child {
+  border-bottom-right-radius:3px;
+}
+ 
+.listaJug td {
+  background:#FFFFFF;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:26px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #C1C3D1;
+}
+
+.listaJug td:last-child {
+  border-right: 0px;
+}
+
+
+.listaJug th {
+  text-align: center;
+}
+
+
+.listaJug td{
+  text-align: center;
+}

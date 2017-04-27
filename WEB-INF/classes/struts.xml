@@ -1,0 +1,61 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="Login"
+        class="Entidades.LoginForm"
+                method="execute">
+            <result name="success">/JSP/successPlayer.jsp</result>
+            <result name="error">/JSP/login.jsp</result>
+        </action>
+      
+        <action name="listado" 
+            class="Entidades.LoginAction"
+              method="execute">
+            <result name="success">/JSP/listadoPartido.jsp</result>
+        </action>
+            
+        <action name="agregarJugador"
+           class="Entidades.LoginAction"
+                method="addJugador">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+            <result name="error">/JSP/cambiarDato.jsp</result>
+        </action>
+
+        
+        <action name="eliminarJugador" 
+            class="Entidades.LoginAction"
+                method="eliminarJugador">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+             <result name="error">/JSP/cambiarDato.jsp</result>
+        </action> 
+        <action name="cambiarLugar"
+            class="Entidades.LoginAction"
+                 method="programarLugar">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+            <result name="error">/JSP/cambiarDato.jsp</result>
+        </action>
+        <action name="cambiarFecha"
+            class="Entidades.LoginAction"
+                method="programarFecha">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+            <result name="error">/JSP/cambiarDato.jsp</result>
+        </action>
+        <action name="cambiarPrecio"
+            class="Entidades.LoginAction"
+                method="programarPrecio">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+            <result name="error">/JSP/cambiarDato.jsp</result>
+        </action>
+         <action name="cambiarCantJugadores"
+            class="Entidades.LoginAction"
+                method="programarCantJugadores">
+            <result name="success">/JSP/cambiarDato.jsp</result>
+            <result name="error">/JSP/cambiarDato.jsp</result>
+        </action>
+        
+    </package>
+</struts>

@@ -1,0 +1,112 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 10/07/2016, 19:44:53
+    Author     : ISB
+*/
+
+@font-face{
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Intro"), url('../fonts/Intro.otf') format("truetype");
+    
+}
+
+@font-face{
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mohave"), url('../fonts/Mohave.otf') format("truetype");
+     
+}
+
+body {
+  background: url(../img/BackgroundIndex.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+ h1{
+     font-family: "Intro";
+     font-size: 60px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+     text-shadow: 2px 2px 4px #FFFFFF;
+     color: white;
+ }
+
+ #container1 img{
+     float:left;
+     width:530px;
+     height:700px;
+ }
+
+#container1 div, #container2 div{
+   
+    font-family: "Mohave";
+     width: 900px;
+    font-size:23px;
+    color:white;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    border: 6px solid #ffffff;
+    padding:20px;
+    margin-bottom: 100px;
+   
+}
+#container1 div{
+    float:right;
+    background-color:rgba(0,0,0,0.9);
+}
+#container2 div{
+
+    background-color:dodgerblue;
+}
+
+
+.hlink1b  a:link, .hlink1b a:visited, .hlink1a a:link, .hlink1a a:visited, .hlink2b a:link, .hlink2b a:visited {
+  
+    font-family: "Mohave";
+    padding: 15px 25px;
+    color:white;
+    font-size:35px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.hlink1b  a:link, .hlink1b a:visited{
+    padding-left: 160px;
+    background-color: #f44336;
+    text-align: center;
+}
+
+.hlink1b a:hover, .hlink1b a:active {
+    background-color: #E52A1F;
+}
+
+.hlink1a  a:link, .hlink1a a:visited{
+    background-color: #f44336;
+}
+
+.hlink1a a:hover, .hlink1a a:active {
+    background-color: #E52A1F;
+}
+
+.hlink2b a:link, .hlink2b a:visited {
+    background-color: #C673B3;
+    padding: 15px 56px;
+}
+
+
+.hlink2b a:hover, .hlink2b a:active {
+    background-color: #A5478F;
+}

@@ -1,0 +1,162 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 02/03/2016, 06:58:24
+    Author     : Iña
+*/
+
+@font-face{
+    font-family: 'Intro';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Intro"), url('../fonts/Intro.otf') format("truetype");
+    
+}
+
+@font-face{
+    font-family: 'Mohave';
+    font-style: normal;
+    font-weight: normal;
+    src: local("Mohave"), url('../fonts/Mohave.otf') format("truetype");
+     
+}
+
+body {
+  background: url(../img/Background01.jpg)no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+ h1{
+     font-family: "Intro";
+     font-size: 60px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+     text-shadow: 2px 2px 4px #FFFFFF;
+     color: white;
+ }
+ 
+  h2{
+     font-family: "Mohave";
+     font-size: 40px;
+     -webkit-text-stroke-width: 1px;
+     -webkit-text-stroke-color: black;
+     text-shadow: 1px 1px 2px #FFFFFF;
+     color: darksalmon;
+      letter-spacing: 8px;
+     
+ }
+ 
+ #Square{  
+    height:500px;
+    width:450px;
+    margin-left:auto;
+    margin-right:auto;
+    background:rgba(12,10,51,0.5); 
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    border:5px solid #472E32;
+
+ }
+
+#inSquare{
+    text-align: center;
+    font-family: "Mohave";
+    font-size: 30px;
+    color: slateblue;
+    word-spacing: 4px;
+    
+}
+
+ #admin{
+    transform:scale(1.5, 1.5);
+    margin-left:auto; 
+    margin-right:auto;
+    vertical-align: middle;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+
+ }
+ h3{
+     color:salmon;
+     font-size: 25px;    
+ }
+ 
+
+#tuser{
+    font-family: Arial;
+    height: 30px;
+    width: 185px;
+    font-size: 20px;
+    margin-left:auto;
+    margin-right:auto;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+
+}
+#pass{
+    height: 30px;
+    width: 160px;
+    font-size: 20px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+#admlabel{
+    color: salmon;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+#error{
+
+   font-size:16px;
+   color: red;
+
+}
+
+input.pass:disabled{
+    background:rgba(12,10,51,0.2); 
+}
+input.pass:enabled{
+    background-color: #f8f8f8;    
+}
+
+#bing{
+        background-color: #C673B3;
+        font-family: 'Mohave';
+        color: white;
+        padding: 14px 25px;
+        text-align: center;	
+        text-decoration: none;
+        display: inline-block;
+	font-size:26px;
+        letter-spacing: 8px;
+        text-shadow: 1px 1px 2px #000000;
+
+
+}
+#bing:hover {
+        background-color: #A5478F;
+        
+}
+#bing:active {
+	position:relative;
+	top:1px;
+}
